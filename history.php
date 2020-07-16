@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . "vendor/autoload.php";
-require_once __DIR__ . "config.php";
+require_once __DIR__ . "/vendor/autoload.php";
+require_once __DIR__ . "/config.php";
 
 $bot = new \MailIM\Bot(ICQ_TOKEN, 'https://api.icq.net/bot/v1/');
 $mtm = new \MailIM\Bot(MTM_TOKEN, 'https://api.internal.myteam.mail.ru/bot/v1/');
@@ -81,3 +81,5 @@ foreach (history($bot, ICQ_GROUP_ID) as $message) {
 		$messageMap[$message['msgId']] = $res['msgId'];
 	}
 }
+
+$bot->sendText(ICQ_GROUP_ID, "История перевезена, отправляйтесь в новый чат");

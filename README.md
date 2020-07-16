@@ -16,6 +16,7 @@ user@corp.mail.ru 2020-04-01 12:04:20: Сообщение
 git clone https://github.com/tyaga/mrbot-history.git
 cd mrbot-history
 composer install
+cp config.dist.php config.php
 ```
 
 ### Использование
