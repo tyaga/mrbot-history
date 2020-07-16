@@ -1,0 +1,12 @@
+{
+    "name": "tyaga/mrhistory",
+    "authors": [
+        {
+            "name": "tyaga",
+            "email": "tyagunov@corp.mail.ru"
+        }
+    ],
+    "require": {
+    	"tyaga/mrbot-php": "dev-master"
+    }
+}
