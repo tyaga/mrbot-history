@@ -22,7 +22,7 @@ cp config.dist.php config.php
 ### Использование
 
 1) Cоздать двух ботов - одного в myteam, второго в ICQ. При помощи скрипта ботом в ICQ будем читать сообщения из старого чата в ICQ, ботом в myteam будем писать сообщения в новый чат в myteam. Инструкция по созданию бота есть [тут для myteam](https://myteam.mail.ru/botapi/botTutorial.html) и [тут для icq](https://icq.com/botapi/botTutorial.html) - читать от п. **Регистрация бота**. 
-2) Указать этим ботам (и в майтим и в ICQ) **/setjoingroups enable** и **/setprivacy Disable** .
+2) Указать этим ботам (и в майтим и в ICQ) **/setjoingroups enable** и **/setprivacy Disable** . Для этого в @metabot (как указано в инструкции) сначала надо отправить сообщение **/setjoingroups** , затем отправляется имя бота, затем отправляется **enable**. Затем отправить **/setprivacy**, затем имя бота, затем **Disable** . 
 3) В config.php заполнить ICQ_TOKEN и MTM_TOKEN . 
 4) Эти два бота будут использоваться для перевозов всех ваших чатов. В описании ниже вместо @history_bot читать ник созданных вами ботов. 
 
